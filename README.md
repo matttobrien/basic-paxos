@@ -37,11 +37,10 @@ def __init__(self, networkUID='A', quorumSize=1):
 ```
 These funcations must be updated to reflect the correct networkUID you would like to assign, and the updated quorum size.
 
+## Using Pyro Over a Network
 To host the Paxos roles on different machines, each node must have it's own Pyro Server. The uploaded pyroServer.py file can be modified to host a prefered role.
 When doing Pyro calls over a network, you must define the host and port for each server, as well as the name server, or they will just be hosted on localhost.
 This can be done as follows:
-
-## Using Pyro Over a Network
 ``` bash
 # start name server allowing it to be accessable to other machines
 python -m Pyro4.naming -n IP_ADDR
