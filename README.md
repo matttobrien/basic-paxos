@@ -27,7 +27,7 @@ python pyroServer.py
 python pyroServer.py
 ```
 
-Done!
+## 4. Done!
 
 To host the Paxos roles on different machines, each node must have it's own Pyro Server. The uploaded pyroServer.py file can be modified to host a prefered role.
 When doing Pyro calls over a network, you must define the host and port for each server, as well as the name server, or they will just be hosted on localhost.
