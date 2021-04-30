@@ -12,6 +12,8 @@ pip2 install Pyro4
 ```
 ## 2. Start Pyro4 Name Server
 ``` bash
+# tell name server to use pickle
+export PYRO_SERIALIZERS_ACCEPTED=serpent,pickle
 # start Name Server
 python -m Pyro4.naming
 ```
