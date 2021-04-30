@@ -31,6 +31,12 @@ python pyroServer.py
 
 ## 5. Done!
 
+If you would like to create more nodes for testing, you must update a few functions. Each node has thier networkUID and the quorum size defined in the __init__ functions as follows:
+``` bash
+def __init__(self, networkUID='A', quorumSize=1):
+```
+These funcations must be updated to reflect the correct networkUID you would like to assign, and the updated quorum size.
+
 To host the Paxos roles on different machines, each node must have it's own Pyro Server. The uploaded pyroServer.py file can be modified to host a prefered role.
 When doing Pyro calls over a network, you must define the host and port for each server, as well as the name server, or they will just be hosted on localhost.
 This can be done as follows:
