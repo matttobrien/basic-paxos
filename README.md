@@ -32,10 +32,12 @@ This can be done as follows:
 
 ## Using Pyro Over a Network
 ``` bash
-# locate remote name server
-ns = Pyro4.locateNS(host='IP ADDR', port=9090)
+# start name server allowing it to be accessable to other machines
+python -m Pyro4.naming -n IP_ADDR
+# locate remote name server from code
+ns = Pyro4.locateNS(host='IP_ADDR', port=9090)
 # create pyro daemon to be accessable to other machines
-daemon = Pyro4.Daemon(host='IP ADDR', port=9090)
+daemon = Pyro4.Daemon(host='IP_ADDR', port=9090)
 ```
 
 I always used port 9090, but you can assign any available port.
