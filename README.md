@@ -35,7 +35,7 @@ If you would like to create more nodes for testing, you must update a few functi
 ``` bash
 def __init__(self, networkUID='A', quorumSize=1):
 ```
-These funcations must be updated to reflect the correct networkUID you would like to assign, and the updated quorum size.
+These functions must be updated to reflect the correct networkUID you would like to assign, and the updated quorum size.
 
 ## Using Pyro Over a Network
 To host the Paxos roles on different machines, each node must have it's own Pyro Server. The uploaded pyroServer.py file can be modified to host a prefered role.
