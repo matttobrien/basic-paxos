@@ -10,24 +10,24 @@ Steps to run:
 # install Pryo4
 pip2 install Pyro4
 ```
-## 1. Start Pyro4 Name Server
+## 2. Start Pyro4 Name Server
 ``` bash
 # start Name Server
 python -m Pyro4.naming
 ```
-## 2. Start Pyro4 Daemon
+## 3. Start Pyro4 Daemon
 ``` bash
 # run pyroServer.py
 python pyroServer.py
 ```
 
-## 3. Run Client File
+## 4. Run Client File
 ``` bash
 # run client.py
 python pyroServer.py
 ```
 
-## 4. Done!
+## 5. Done!
 
 To host the Paxos roles on different machines, each node must have it's own Pyro Server. The uploaded pyroServer.py file can be modified to host a prefered role.
 When doing Pyro calls over a network, you must define the host and port for each server, as well as the name server, or they will just be hosted on localhost.
