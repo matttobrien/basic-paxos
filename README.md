@@ -2,7 +2,7 @@
 
 Please use Python version 2.x.x. as it will not work with Python3.
 
-The code uploaded can be used to simulate a Basic Paxos run with one Proposer, one Acceptor, and one Learner locally.
+The code uploaded can be used to simulate a Basic Paxos run with one Proposer, one Acceptor, and one Learner, locally.
 
 Steps to run:
 ## 1. Start Pyro4 Name Server
